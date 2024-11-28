@@ -1,0 +1,15 @@
+<div class="favorites">
+    <h2>Filmes/Séries Favoritos</h2>
+  
+    <div class="favorites-list">
+      <div *ngFor="let movie of favorites" class="favorites-card">
+        <img [src]="movie.Poster" alt="Poster" />
+        <p>{{ movie.Title }} ({{ movie.Year }})</p>
+      </div>
+    </div>
+  
+    <div *ngIf="favorites.length === 0">
+      <p>Você ainda não tem favoritos</p>
+    </div>
+  </div>
+  

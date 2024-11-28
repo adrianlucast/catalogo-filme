@@ -1,0 +1,10 @@
+<div class="movie-detail" *ngIf="movie">
+    <h2>{{ movie.Title }} ({{ movie.Year }})</h2>
+    <img [src]="movie.Poster" alt="Poster" />
+    <p class="movie-info"><strong>Direção:</strong> <span>{{ movie.Director }}</span></p>
+    <p class="movie-info"><strong>Elenco:</strong> <span>{{ movie.Actors }}</span></p>
+    <p class="movie-info"><strong>Gênero:</strong> <span>{{ movie.Genre }}</span></p>
+    <p class="movie-info"><strong>Sinopse:</strong> <span>{{ movie.Plot }}</span></p>
+    <p class="movie-info"><strong>Prêmios:</strong> <span>{{ movie.Awards }}</span></p>
+  </div>
+  

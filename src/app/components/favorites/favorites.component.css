@@ -1,0 +1,37 @@
+/* Estilo do componente de favoritos */
+.favorites {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .favorites h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .favorites .favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .favorites .favorites-card {
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .favorites .favorites-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .favorites .favorites-card p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  

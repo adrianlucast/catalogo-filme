@@ -1,0 +1,18 @@
+<div class="movie-list">
+    <input type="text" [(ngModel)]="searchQuery" placeholder="Pesquisar filme">
+    <button (click)="onSearch()">Buscar</button>
+  
+    <div *ngIf="movies.length > 0">
+      <div *ngFor="let movie of movies" class="movie-card">
+        <img [src]="movie.Poster" alt="Poster" />
+        <p>{{ movie.Title }} ({{ movie.Year }})</p>
+        <button routerLink="/movie/{{ movie.imdbID }}">Ver Detalhes</button>
+        <button (click)="addToFavorites(movie)">Adicionar aos Favoritos</button>
+      </div>
+    </div>
+  
+    <div *ngIf="movies.length === 0" class="no-results">
+      <p>Nenhum filme encontrado</p>
+    </div>
+  </div>
+  

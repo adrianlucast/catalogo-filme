@@ -1,0 +1,33 @@
+/* Estilo do componente de detalhes do filme */
+.movie-detail {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .movie-detail img {
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .movie-detail h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .movie-detail p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .movie-detail .movie-info {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .movie-detail .movie-info span {
+    color: #555;
+  }
+  
